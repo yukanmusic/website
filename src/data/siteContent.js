@@ -15,7 +15,7 @@ export const countries = [
 
 export const navLinks = [
   { label: "Home", to: "/" },
-  { label: "Overview", to: "/overview" },
+  { label: "Biography", to: "/biography" },
   { label: "Music", to: "/music" },
   { label: "Travel", to: "/travel" },
   { label: "Shows", to: "/shows" },

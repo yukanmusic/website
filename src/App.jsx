@@ -3,7 +3,7 @@ import SiteLayout from "./components/SiteLayout";
 import HomePage from "./pages/HomePage";
 import JoinPage from "./pages/JoinPage";
 import MusicPage from "./pages/MusicPage";
-import OverviewPage from "./pages/OverviewPage";
+import BiographyPage from "./pages/BiographyPage";
 import ShowsPage from "./pages/ShowsPage";
 import TravelPage from "./pages/TravelPage";
 import UpdatesPage from "./pages/UpdatesPage";
@@ -14,7 +14,7 @@ export default function App() {
       <Routes>
         <Route element={<SiteLayout />}>
           <Route path="/" element={<HomePage />} />
-          <Route path="/overview" element={<OverviewPage />} />
+          <Route path="/biography" element={<BiographyPage />} />
           <Route path="/music" element={<MusicPage />} />
           <Route path="/travel" element={<TravelPage />} />
           <Route path="/shows" element={<ShowsPage />} />
