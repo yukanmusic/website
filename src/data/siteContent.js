@@ -16,16 +16,13 @@ export const countries = [
 export const navLinks = [
   { label: "Home", to: "/" },
   { label: "Biography", to: "/biography" },
-  { label: "Music", to: "/music" },
-  { label: "Travel", to: "/travel" },
   { label: "Shows", to: "/shows" },
-  { label: "Updates", to: "/updates" },
 ];
 
 export const socials = [
   { label: "Instagram", href: "https://www.instagram.com/luvmewhileyukan?igsh=N2djNGU2cTJwZTRj&utm_source=qr" },
   { label: "TikTok", href: "https://www.tiktok.com/@luvmewhileyukan?_r=1&_t=ZN-96Dj1MXMH5y" },
-  { label: "YouTube", href: "https://youtube.com/@yukanmusic" },
+  { label: "YouTube", href: "https://www.youtube.com/@luvmewhileyukan" },
   { label: "Spotify", href: "https://open.spotify.com/artist/39OjiOlY8XDsskZ3h4uXCG?si=rPTaodfDRxC7DOp_S4XbZA" },
   { label: "SoundCloud", href: "https://on.soundcloud.com/9Wazg2dR1qiF48ofzB" },
   { label: "X", href: "https://x.com/luvmewhileyukan?s=21" },
