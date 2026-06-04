@@ -1,9 +1,14 @@
 import { NavLink } from "react-router-dom";
 import HeroVisual from "../components/HeroVisual";
-import JoinForm from "../components/JoinForm";
 import { perks, socials } from "../data/siteContent";
 
 export default function HomePage() {
+  const musicLinks = socials.filter((item) =>
+    ["Instagram", "TikTok", "YouTube", "Spotify", "SoundCloud"].includes(
+      item.label
+    )
+  );
+
   return (
     <>
       <section className="hero">
@@ -19,15 +24,6 @@ export default function HomePage() {
             next Yukan release before the public rollout.
           </p>
 
-          <div className="hero-actions">
-            <NavLink className="primary-link" to="/join">
-              Get early access
-            </NavLink>
-            <NavLink className="secondary-link" to="/music">
-              Hear the latest
-            </NavLink>
-          </div>
-
           <div className="perk-row">
             {perks.map((perk) => (
               <div key={perk} className="perk-pill">
@@ -42,62 +38,40 @@ export default function HomePage() {
       </section>
 
       <section className="trust-strip">
-        <p>Built for listeners who want the link before release day.</p>
+        <p></p>
       </section>
 
-      <section className="content-grid">
-        <article className="capture-card">
+      <section className="music-links-panel">
+        <div className="music-links-visual">
+          <img
+            src="/assets/yukan1.png"
+            alt="Yukan portrait"
+            className="music-links-image"
+          />
+        </div>
+
+        <aside className="listen-card listen-card-wide">
           <div className="section-heading">
-            <p className="eyebrow">Get Access</p>
-            <h3>Unlock the private link</h3>
-          </div>
-
-          <p className="section-copy">
-            Leave your details for early access to new music, unreleased previews, and direct
-            updates based on where you are.
-          </p>
-
-          <JoinForm />
-
-          <div className="offer-card">
-            <p className="offer-label">What you get</p>
-            <ul>
-              <li>Exclusive unreleased track access</li>
-              <li>Private streaming links before release day</li>
-              <li>Priority notice for drops, visuals, and announcements</li>
-            </ul>
-          </div>
-        </article>
-
-        <aside className="listen-card">
-          <div className="section-heading">
-            <p className="eyebrow">Listen</p>
-            <h3>Start with the sound</h3>
-          </div>
-
-          <div className="player-shell">
-            <img
-              src="/assets/yukan1.png"
-              alt="Yukan cover art"
-              className="player-image"
-            />
+            <p className="eyebrow">Connect</p>
+            <h3>Find Yukan everywhere that matters</h3>
           </div>
 
           <p className="player-note">
-            Swap this embed for the live release whenever needed. The page is already structured
-            for Netlify hosting.
+            Tap through to stay close to the music, the visuals, and every new release across the
+            main platforms.
           </p>
 
-          <div className="social-stack">
-            {socials.map((item) => (
+          <div className="social-stack social-stack-long">
+            {musicLinks.map((item) => (
               <a
                 key={item.label}
-                className="social-card"
+                className="social-card social-card-long"
                 href={item.href}
                 target="_blank"
                 rel="noreferrer"
               >
                 <span>{item.label}</span>
+                <span className="social-caption">Open platform</span>
                 <span className="arrow">↗</span>
               </a>
             ))}

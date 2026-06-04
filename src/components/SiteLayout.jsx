@@ -43,31 +43,32 @@ export default function SiteLayout() {
 
       <footer className="site-footer">
         <div className="footer-grid">
-          <div>
-            <p className="footer-brand">Yukan Music</p>
+          <div className="footer-brand-block">
+            <p className="footer-kicker">Yukan Music</p>
+            <p className="footer-brand">Stay close to the drop.</p>
             <p className="footer-copy">
               Private drops, early access, and direct updates for the first listeners.
             </p>
           </div>
 
-          <div>
+          <div className="footer-column">
             <p className="footer-label">Navigate</p>
             <div className="footer-links">
               {navLinks.map((item) => (
-                <NavLink key={item.to} to={item.to}>
+                <NavLink key={item.to} to={item.to} className="footer-link">
                   {item.label}
                 </NavLink>
               ))}
-              <NavLink to="/join">Join the list</NavLink>
+              <NavLink to="/join" className="footer-link">Join the list</NavLink>
             </div>
           </div>
 
-          <div>
-            <p className="footer-label">Social</p>
-            <div className="footer-links">
+          <div className="footer-column">
+            <p className="footer-label">Platforms</p>
+            <div className="footer-links footer-links-social">
               {socials.map((item) => (
-                <a key={item.label} href={item.href} target="_blank" rel="noreferrer">
-                  {item.label}
+                <a key={item.label} href={item.href} target="_blank" rel="noreferrer" className="footer-link footer-social-link">
+                  <span>{item.label}</span>
                 </a>
               ))}
             </div>
