@@ -7,6 +7,7 @@ import BiographyPage from "./pages/BiographyPage";
 import ShowsPage from "./pages/ShowsPage";
 import TravelPage from "./pages/TravelPage";
 import UpdatesPage from "./pages/UpdatesPage";
+import PrivateListPage from "./pages/PrivateListPage";
 
 export default function App() {
   return (
@@ -20,6 +21,7 @@ export default function App() {
           <Route path="/shows" element={<ShowsPage />} />
           <Route path="/updates" element={<UpdatesPage />} />
           <Route path="/join" element={<JoinPage />} />
+          <Route path="/private-list" element={<PrivateListPage />} />
           <Route path="*" element={<Navigate to="/" replace />} />
         </Route>
       </Routes>

@@ -7,7 +7,7 @@ function encodeForm(data) {
 
 export default function JoinForm() {
   const [formData, setFormData] = useState({
-    name: "",
+    fullName: "",
     email: "",
     country: "",
     city: "",
@@ -50,7 +50,7 @@ export default function JoinForm() {
         message: "You are on the list. We will send early access updates when the next drop is ready.",
       });
       setFormData({
-        name: "",
+        fullName: "",
         email: "",
         country: "",
         city: "",
@@ -79,13 +79,13 @@ export default function JoinForm() {
       <input type="hidden" name="bot-field" />
 
       <label>
-        <span>Name</span>
+        <span>Full name</span>
         <input
           type="text"
-          name="name"
-          value={formData.name}
+          name="fullName"
+          value={formData.fullName}
           onChange={handleChange}
-          placeholder="Your name"
+          placeholder="Your full name"
           required
         />
       </label>
