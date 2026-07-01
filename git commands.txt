@@ -2,3 +2,24 @@ git status
 git add .
 git commit -m"yukan git test"
 git push
+
+git remote -v
+
+git branch -M main
+git push -u origin main
+git pull origin main --allow-unrelated-histories
+:wq
+
+git submodule deinit -f yukan-front
+git rm -f yukan-front
+rm -rf .git/modules/yukan-front
+
+
+
+
+
+
+
+
+
+https://github.com/yukanmusic/website
