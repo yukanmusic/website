@@ -3,7 +3,7 @@ import PageHero from "../components/PageHero";
 const bioSections = [
   {
     heading: "Early Rise",
-    body: "Yukan is a 17-year-old emerging rapper from London, UK, known for his energetic, bouncing sound and fast rise within the underground scene. He began releasing music in early 2025 and quickly built momentum through viral traction on platforms like TikTok and streaming services.",
+    body: "Yukan is a 18-year-old emerging rapper from London, UK, known for his energetic, bouncing sound and fast rise within the underground scene. He began releasing music in early 2025 and quickly built momentum through viral traction on platforms like TikTok and streaming services.",
   },
   {
     heading: "Breakout Tracks",
@@ -32,7 +32,7 @@ export default function BiographyPage() {
     <>
       <PageHero
         eyebrow="Biography"
-        title="17. London. Underground."
+        title="18. London. Underground."
         body="From early 2025 to millions of streams — the story behind the sound."
       />
 
